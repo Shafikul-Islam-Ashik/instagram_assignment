@@ -109,8 +109,8 @@ postForm.onsubmit = (e) => {
     data = {
       author_name: author_name,
       author_photo: author_photo,
-      post_content: post_content || null,
-      post_photo: post_photo || null,
+      post_content: post_content ?? null,
+      post_photo: post_photo ?? null,
       post_time: Date.now(),
     };
     // send data to database

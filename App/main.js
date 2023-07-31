@@ -41,7 +41,7 @@ const showLatestPost = () => {
             <!------ Post Body ------>
             <div class="post-body">
                 <div class="post-img">
-                <img src="${item.post_photo}" alt="" />
+                ${item.post_photo ? `<img src="${item.post_photo}" alt="" />` : ""}
                 </div>
                 <div class="post-reaction">
                 <div class="p-reaction-left">
@@ -64,7 +64,7 @@ const showLatestPost = () => {
                 </div>
                 <div class="post-content">
                 <p>
-                ${item.post_content}
+                ${item.post_content ? item.post_content : ""}
                 </p>
                 </div>
                 <div class="write-comment">
